@@ -1,9 +1,8 @@
-from modelo.direccion import Direccion as Dir
+from modelo.comuna import Comuna
 
-class Direccion(Dir):
-    def __init__(self, id_direccion, nombre_dirrecion, id_comuna, calle, numero, departamento):
-        super().__init__(id_comuna).__init__()
-        self.id_dirrecion = id_direccion 
-        self.calle = calle 
-        self.numero = numero
-        self.departamento = departamento 
+class Direccion(Comuna):
+    def __init__(self, id_direccion, cod_comuna, nombre_comuna, id_comuna):
+        super().__init__(id_comuna)
+        self.id_direccion = id_direccion
+        self.cod_comuna = cod_comuna
+        self.nombre_comuna = nombre_comuna

@@ -1,5 +1,5 @@
-class comuna():
-    def __call__ (self, id_comuna, nombre_comuna, codigo_comuna):
-        self.id_comuna = id_comuna 
-        self.nombre_comuna = nombre_comuna 
-        self.codigo_comuna = codigo_comuna 
+class Comuna():
+    def __init__(self, id_comuna, cod_comuna, nombre_comuna):
+        self.id_comuna = id_comuna
+        self.cod_comuna = cod_comuna
+        self.nombre_comuna = nombre_comuna
